@@ -1,0 +1,85 @@
+\hypertarget{main_8cpp}{}\doxysection{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.cpp@{main.cpp}}
+{\ttfamily \#include \char`\"{}lib.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$concepts$>$}\newline
+{\ttfamily \#include $<$cstddef$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$tuple$>$}\newline
+Include dependency graph for main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structis__tuple}{is\+\_\+tuple$<$ T $>$}}
+\item 
+struct \mbox{\hyperlink{structis__tuple_3_01std_1_1tuple_3_01Ts_8_8_8_01_4_01_4}{is\+\_\+tuple$<$ std\+::tuple$<$ Ts... $>$ $>$}}
+\item 
+struct \mbox{\hyperlink{structis__tuple__with__identic__types_3_01T_00_01tuple_3_01Ts_8_8_8_01_4_01_4}{is\+\_\+tuple\+\_\+with\+\_\+identic\+\_\+types$<$ T, tuple$<$ Ts... $>$ $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\enable\+\_\+if$<$ is\+\_\+integral$<$ T $>$\+::value, void $>$\+::type \mbox{\hyperlink{main_8cpp_a0ec699e713dbdcca5b1c67c74badb815}{Print\+Ip}} (const T \&ip)
+\item 
+{\footnotesize template$<$typename T $>$ }\\enable\+\_\+if$<$ is\+\_\+same$<$ T, string $>$\+::value, void $>$\+::type \mbox{\hyperlink{main_8cpp_ad74a945d3b90b3ff91a9c321075a8c9c}{Print\+Ip}} (const T \&ip)
+\item 
+{\footnotesize template$<$typename T $>$ }\\enable\+\_\+if$<$ \mbox{\hyperlink{structis__tuple__with__identic__types}{is\+\_\+tuple\+\_\+with\+\_\+identic\+\_\+types}}$<$ typename tuple\+\_\+element$<$ 0, T $>$\+::type, T $>$\+::value, void $>$\+::type \mbox{\hyperlink{main_8cpp_a5dc202fd7a1fb56f633a16cbc8ca1452}{Print\+Ip}} (const T \&ip)
+\item 
+{\footnotesize template$<$typename T $>$ }\\enable\+\_\+if$<$!is\+\_\+same$<$ T, string $>$\+::value \&\&!is\+\_\+integral$<$ T $>$\+::value \&\&!\mbox{\hyperlink{structis__tuple}{is\+\_\+tuple}}$<$ T $>$\+::value, void $>$\+::type \mbox{\hyperlink{main_8cpp_ac78bd1aac4c9a57b72c5ef6de8117032}{Print\+Ip}} (const T \&ip)
+\item 
+void \mbox{\hyperlink{main_8cpp_a275d090039f41c9c97a35187f3dd136a}{kek}} ()
+\item 
+int \mbox{\hyperlink{main_8cpp_a2c3f6775325c30275d11c6abee2db6a0}{main}} (int, char $\ast$$\ast$)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_a275d090039f41c9c97a35187f3dd136a}\label{main_8cpp_a275d090039f41c9c97a35187f3dd136a}} 
+\index{main.cpp@{main.cpp}!kek@{kek}}
+\index{kek@{kek}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{kek()}{kek()}}
+{\footnotesize\ttfamily void kek (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+doing some shit sad \mbox{\Hypertarget{main_8cpp_a2c3f6775325c30275d11c6abee2db6a0}\label{main_8cpp_a2c3f6775325c30275d11c6abee2db6a0}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{,  }\item[{char $\ast$$\ast$}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a0ec699e713dbdcca5b1c67c74badb815}\label{main_8cpp_a0ec699e713dbdcca5b1c67c74badb815}} 
+\index{main.cpp@{main.cpp}!PrintIp@{PrintIp}}
+\index{PrintIp@{PrintIp}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{PrintIp()}{PrintIp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+enable\+\_\+if$<$is\+\_\+integral$<$T$>$\+::value, void$>$\+::type Print\+Ip (\begin{DoxyParamCaption}\item[{const T \&}]{ip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+For integers For integers \mbox{\Hypertarget{main_8cpp_ad74a945d3b90b3ff91a9c321075a8c9c}\label{main_8cpp_ad74a945d3b90b3ff91a9c321075a8c9c}} 
+\index{main.cpp@{main.cpp}!PrintIp@{PrintIp}}
+\index{PrintIp@{PrintIp}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{PrintIp()}{PrintIp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+enable\+\_\+if$<$is\+\_\+same$<$T, string$>$\+::value, void$>$\+::type Print\+Ip (\begin{DoxyParamCaption}\item[{const T \&}]{ip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+For strings For strings \mbox{\Hypertarget{main_8cpp_a5dc202fd7a1fb56f633a16cbc8ca1452}\label{main_8cpp_a5dc202fd7a1fb56f633a16cbc8ca1452}} 
+\index{main.cpp@{main.cpp}!PrintIp@{PrintIp}}
+\index{PrintIp@{PrintIp}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{PrintIp()}{PrintIp()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+enable\+\_\+if$<$\mbox{\hyperlink{structis__tuple__with__identic__types}{is\+\_\+tuple\+\_\+with\+\_\+identic\+\_\+types}}$<$typename tuple\+\_\+element$<$0, T$>$\+::type, T$>$\+::value, void$>$\+::type Print\+Ip (\begin{DoxyParamCaption}\item[{const T \&}]{ip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+For tuple For tuple \mbox{\Hypertarget{main_8cpp_ac78bd1aac4c9a57b72c5ef6de8117032}\label{main_8cpp_ac78bd1aac4c9a57b72c5ef6de8117032}} 
+\index{main.cpp@{main.cpp}!PrintIp@{PrintIp}}
+\index{PrintIp@{PrintIp}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{PrintIp()}{PrintIp()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+enable\+\_\+if$<$!is\+\_\+same$<$T, string$>$\+::value \&\& !is\+\_\+integral$<$T$>$\+::value \&\& !\mbox{\hyperlink{structis__tuple}{is\+\_\+tuple}}$<$T$>$\+::value, void$>$\+::type Print\+Ip (\begin{DoxyParamCaption}\item[{const T \&}]{ip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+For others For others 
