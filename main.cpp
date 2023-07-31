@@ -70,6 +70,13 @@ PrintIp(const T& ip) {
     cout << endl;
 }
 
+/**
+ * doing some shit
+ * sad
+ */
+void kek () {
+    cout << "123";
+}
 
 int main (int, char **) {
     PrintIp(int8_t{-1});
