@@ -1,0 +1,78 @@
+\hypertarget{namespaceWithConcepts}{}\doxysection{With\+Concepts Namespace Reference}
+\label{namespaceWithConcepts}\index{WithConcepts@{WithConcepts}}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$std\+::integral T$>$ }\\void \mbox{\hyperlink{namespaceWithConcepts_a628d06690a407a12ce60697abe67a029}{Print\+Ip}} (const T \&ip, std\+::ostream \&os=std\+::cout)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{namespaceWithConcepts_a6a078485d09856534d1dc245626d6fb4}{requires}} std\+::is\+\_\+same$<$ T, std\+::string $>$\+::value void \mbox{\hyperlink{namespaceWithConcepts_a44db5f266b2e90fb8aa60dfc320e431a}{Print\+Ip}} (const T \&ip, std\+::ostream \&os=std\+::cout)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{namespaceWithConcepts_a6a078485d09856534d1dc245626d6fb4}{requires}} (!std\+::is\+\_\+same$<$ T, std\+::string $>$\+::value) \&\&(!std
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\concept \mbox{\hyperlink{namespaceWithConcepts_a4b5d845c918968594fde8e0a174d4c7b}{Tuple}}
+\item 
+{\footnotesize template$<$typename T $>$ }\\concept \mbox{\hyperlink{namespaceWithConcepts_a5d863ed464fedd6b1640d2b82ba60020}{Tuple\+With\+Identical\+Types}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceWithConcepts_a628d06690a407a12ce60697abe67a029}\label{namespaceWithConcepts_a628d06690a407a12ce60697abe67a029}} 
+\index{WithConcepts@{WithConcepts}!PrintIp@{PrintIp}}
+\index{PrintIp@{PrintIp}!WithConcepts@{WithConcepts}}
+\doxysubsubsection{\texorpdfstring{PrintIp()}{PrintIp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$std\+::integral T$>$ \\
+void With\+Concepts\+::\+Print\+Ip (\begin{DoxyParamCaption}\item[{const T \&}]{ip,  }\item[{std\+::ostream \&}]{os = {\ttfamily std\+:\+:cout} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceWithConcepts_a44db5f266b2e90fb8aa60dfc320e431a}\label{namespaceWithConcepts_a44db5f266b2e90fb8aa60dfc320e431a}} 
+\index{WithConcepts@{WithConcepts}!PrintIp@{PrintIp}}
+\index{PrintIp@{PrintIp}!WithConcepts@{WithConcepts}}
+\doxysubsubsection{\texorpdfstring{PrintIp()}{PrintIp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{namespaceWithConcepts_a6a078485d09856534d1dc245626d6fb4}{requires}} std\+::is\+\_\+same$<$T, std\+::string$>$\+::value void With\+Concepts\+::\+Print\+Ip (\begin{DoxyParamCaption}\item[{const T \&}]{ip,  }\item[{std\+::ostream \&}]{os = {\ttfamily std\+:\+:cout} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespaceWithConcepts_a6a078485d09856534d1dc245626d6fb4}\label{namespaceWithConcepts_a6a078485d09856534d1dc245626d6fb4}} 
+\index{WithConcepts@{WithConcepts}!requires@{requires}}
+\index{requires@{requires}!WithConcepts@{WithConcepts}}
+\doxysubsubsection{\texorpdfstring{requires()}{requires()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+With\+Concepts\+::requires (\begin{DoxyParamCaption}\item[{!std\+::is\+\_\+same$<$ T, std\+::string $>$\+::value}]{ }\end{DoxyParamCaption}) \&\&}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{namespaceWithConcepts_a4b5d845c918968594fde8e0a174d4c7b}\label{namespaceWithConcepts_a4b5d845c918968594fde8e0a174d4c7b}} 
+\index{WithConcepts@{WithConcepts}!Tuple@{Tuple}}
+\index{Tuple@{Tuple}!WithConcepts@{WithConcepts}}
+\doxysubsubsection{\texorpdfstring{Tuple}{Tuple}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+concept With\+Concepts\+::\+Tuple}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\mbox{\hyperlink{namespaceWithConcepts_a6a078485d09856534d1dc245626d6fb4}{requires}} (T a) \{}
+\DoxyCodeLine{    std::tuple\_size<T>::value;}
+\DoxyCodeLine{    std::get<0>(a);}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{namespaceWithConcepts_a5d863ed464fedd6b1640d2b82ba60020}\label{namespaceWithConcepts_a5d863ed464fedd6b1640d2b82ba60020}} 
+\index{WithConcepts@{WithConcepts}!TupleWithIdenticalTypes@{TupleWithIdenticalTypes}}
+\index{TupleWithIdenticalTypes@{TupleWithIdenticalTypes}!WithConcepts@{WithConcepts}}
+\doxysubsubsection{\texorpdfstring{TupleWithIdenticalTypes}{TupleWithIdenticalTypes}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+concept With\+Concepts\+::\+Tuple\+With\+Identical\+Types}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{\mbox{\hyperlink{namespaceWithConcepts_a6a078485d09856534d1dc245626d6fb4}{requires}} (T a) \{}
+\DoxyCodeLine{    std::tuple\_size<T>::value;}
+\DoxyCodeLine{    std::get<0>(a);}
+\DoxyCodeLine{    std::conjunction<std::is\_same<typename std::tuple\_element<0, T>::type, T>>::value;}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}

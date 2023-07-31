@@ -1,0 +1,103 @@
+\hypertarget{namespaceWithoutConcepts}{}\doxysection{Without\+Concepts Namespace Reference}
+\label{namespaceWithoutConcepts}\index{WithoutConcepts@{WithoutConcepts}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structWithoutConcepts_1_1IsTuple}{Is\+Tuple}}
+\item 
+struct \mbox{\hyperlink{structWithoutConcepts_1_1IsTuple_3_01std_1_1tuple_3_01Ts_8_8_8_01_4_01_4}{Is\+Tuple$<$ std\+::tuple$<$ Ts... $>$ $>$}}
+\item 
+struct \mbox{\hyperlink{structWithoutConcepts_1_1IsTupleWithIdenticalTypes}{Is\+Tuple\+With\+Identical\+Types}}
+\item 
+struct \mbox{\hyperlink{structWithoutConcepts_1_1IsTupleWithIdenticalTypes_3_01T_00_01std_1_1tuple_3_01Ts_8_8_8_01_4_01_4}{Is\+Tuple\+With\+Identical\+Types$<$ T, std\+::tuple$<$ Ts... $>$ $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::enable\+\_\+if$<$ std\+::is\+\_\+integral$<$ T $>$\+::value, void $>$\+::type \mbox{\hyperlink{namespaceWithoutConcepts_a803b4ae66d50ae7d394e635559b4b874}{Print\+Ip}} (const T \&ip, std\+::ostream \&os=std\+::cout)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::enable\+\_\+if$<$ std\+::is\+\_\+same$<$ T, std\+::string $>$\+::value, void $>$\+::type \mbox{\hyperlink{namespaceWithoutConcepts_aa88c3073b2951a7080f26a2db564fd0b}{Print\+Ip}} (const T \&ip, std\+::ostream \&os=std\+::cout)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::enable\+\_\+if$<$ \mbox{\hyperlink{structWithoutConcepts_1_1IsTupleWithIdenticalTypes}{Is\+Tuple\+With\+Identical\+Types}}$<$ typename std\+::tuple\+\_\+element$<$ 0, T $>$\+::type, T $>$\+::value, void $>$\+::type \mbox{\hyperlink{namespaceWithoutConcepts_a0615e1691bd1bddd0e0149cbb17eb0f3}{Print\+Ip}} (const T \&ip, std\+::ostream \&os=std\+::cout)
+\item 
+{\footnotesize template$<$typename T $>$ }\\std\+::enable\+\_\+if$<$!std\+::is\+\_\+same$<$ T, std\+::string $>$\+::value \&\&!std\+::is\+\_\+integral$<$ T $>$\+::value \&\&!\mbox{\hyperlink{structWithoutConcepts_1_1IsTuple}{Is\+Tuple}}$<$ T $>$\+::value, void $>$\+::type \mbox{\hyperlink{namespaceWithoutConcepts_a42e77881e6bbfb806eddc3e78bdbed67}{Print\+Ip}} (const T \&ip, std\+::ostream \&os=std\+::cout)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespaceWithoutConcepts_a803b4ae66d50ae7d394e635559b4b874}\label{namespaceWithoutConcepts_a803b4ae66d50ae7d394e635559b4b874}} 
+\index{WithoutConcepts@{WithoutConcepts}!PrintIp@{PrintIp}}
+\index{PrintIp@{PrintIp}!WithoutConcepts@{WithoutConcepts}}
+\doxysubsubsection{\texorpdfstring{PrintIp()}{PrintIp()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::enable\+\_\+if$<$std\+::is\+\_\+integral$<$T$>$\+::value, void$>$\+::type Without\+Concepts\+::\+Print\+Ip (\begin{DoxyParamCaption}\item[{const T \&}]{ip,  }\item[{std\+::ostream \&}]{os = {\ttfamily std\+:\+:cout} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+prints ip 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & integral type \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em ip} & ip\+\_\+representation \\
+\hline
+{\em os} & output stream \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespaceWithoutConcepts_aa88c3073b2951a7080f26a2db564fd0b}\label{namespaceWithoutConcepts_aa88c3073b2951a7080f26a2db564fd0b}} 
+\index{WithoutConcepts@{WithoutConcepts}!PrintIp@{PrintIp}}
+\index{PrintIp@{PrintIp}!WithoutConcepts@{WithoutConcepts}}
+\doxysubsubsection{\texorpdfstring{PrintIp()}{PrintIp()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::enable\+\_\+if$<$std\+::is\+\_\+same$<$T, std\+::string$>$\+::value, void$>$\+::type Without\+Concepts\+::\+Print\+Ip (\begin{DoxyParamCaption}\item[{const T \&}]{ip,  }\item[{std\+::ostream \&}]{os = {\ttfamily std\+:\+:cout} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+prints ip 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & string type \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em ip} & ip\+\_\+representation \\
+\hline
+{\em os} & output stream \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespaceWithoutConcepts_a0615e1691bd1bddd0e0149cbb17eb0f3}\label{namespaceWithoutConcepts_a0615e1691bd1bddd0e0149cbb17eb0f3}} 
+\index{WithoutConcepts@{WithoutConcepts}!PrintIp@{PrintIp}}
+\index{PrintIp@{PrintIp}!WithoutConcepts@{WithoutConcepts}}
+\doxysubsubsection{\texorpdfstring{PrintIp()}{PrintIp()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::enable\+\_\+if$<$\mbox{\hyperlink{structWithoutConcepts_1_1IsTupleWithIdenticalTypes}{Is\+Tuple\+With\+Identical\+Types}}$<$typename std\+::tuple\+\_\+element$<$0, T$>$\+::type, T$>$\+::value, void$>$\+::type Without\+Concepts\+::\+Print\+Ip (\begin{DoxyParamCaption}\item[{const T \&}]{ip,  }\item[{std\+::ostream \&}]{os = {\ttfamily std\+:\+:cout} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+prints ip 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & tuple with identical types \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em ip} & ip\+\_\+representation \\
+\hline
+{\em os} & output stream \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{namespaceWithoutConcepts_a42e77881e6bbfb806eddc3e78bdbed67}\label{namespaceWithoutConcepts_a42e77881e6bbfb806eddc3e78bdbed67}} 
+\index{WithoutConcepts@{WithoutConcepts}!PrintIp@{PrintIp}}
+\index{PrintIp@{PrintIp}!WithoutConcepts@{WithoutConcepts}}
+\doxysubsubsection{\texorpdfstring{PrintIp()}{PrintIp()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::enable\+\_\+if$<$!std\+::is\+\_\+same$<$T, std\+::string$>$\+::value \&\& !std\+::is\+\_\+integral$<$T$>$\+::value \&\& !\mbox{\hyperlink{structWithoutConcepts_1_1IsTuple}{Is\+Tuple}}$<$T$>$\+::value, void$>$\+::type Without\+Concepts\+::\+Print\+Ip (\begin{DoxyParamCaption}\item[{const T \&}]{ip,  }\item[{std\+::ostream \&}]{os = {\ttfamily std\+:\+:cout} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+prints ip 
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & any other type that is not specified by others template specializations \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em ip} & ip\+\_\+representation \\
+\hline
+{\em os} & output stream \\
+\hline
+\end{DoxyParams}

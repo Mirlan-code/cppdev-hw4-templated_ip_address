@@ -1,0 +1,45 @@
+\hypertarget{print__ip__concepts_8h}{}\doxysection{print\+\_\+ip\+\_\+concepts.\+h File Reference}
+\label{print__ip__concepts_8h}\index{print\_ip\_concepts.h@{print\_ip\_concepts.h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$concepts$>$}\newline
+{\ttfamily \#include $<$cstddef$>$}\newline
+{\ttfamily \#include $<$list$>$}\newline
+{\ttfamily \#include $<$tuple$>$}\newline
+Include dependency graph for print\+\_\+ip\+\_\+concepts.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{print__ip__concepts_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{print__ip__concepts_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \mbox{\hyperlink{namespaceWithConcepts}{With\+Concepts}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$std\+::integral T$>$ }\\void \mbox{\hyperlink{namespaceWithConcepts_a628d06690a407a12ce60697abe67a029}{With\+Concepts\+::\+Print\+Ip}} (const T \&ip, std\+::ostream \&os=std\+::cout)
+\item 
+{\footnotesize template$<$typename T $>$ }\\requires std\+::is\+\_\+same$<$ T, std\+::string $>$\+::value void \mbox{\hyperlink{namespaceWithConcepts_a44db5f266b2e90fb8aa60dfc320e431a}{With\+Concepts\+::\+Print\+Ip}} (const T \&ip, std\+::ostream \&os=std\+::cout)
+\item 
+{\footnotesize template$<$typename T $>$ }\\\mbox{\hyperlink{namespaceWithConcepts_a6a078485d09856534d1dc245626d6fb4}{With\+Concepts\+::requires}} (!std\+::is\+\_\+same$<$ T, std\+::string $>$\+::value) \&\&(!std
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\concept \mbox{\hyperlink{namespaceWithConcepts_a4b5d845c918968594fde8e0a174d4c7b}{With\+Concepts\+::\+Tuple}}
+\item 
+{\footnotesize template$<$typename T $>$ }\\concept \mbox{\hyperlink{namespaceWithConcepts_a5d863ed464fedd6b1640d2b82ba60020}{With\+Concepts\+::\+Tuple\+With\+Identical\+Types}}
+\end{DoxyCompactItemize}
