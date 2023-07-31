@@ -3,21 +3,21 @@ cmake_minimum_required(VERSION 3.2)
 set(PATCH_VERSION $ENV{RUN_NUMBER} CACHE INTERNAL "Patch version")
 set(PROJECT_VESRION 0.0.${PATCH_VERSION})
 
-project(helloworld VERSION ${PROJECT_VESRION})
+project(print_ip VERSION ${PROJECT_VESRION})
 
 find_package(Boost COMPONENTS unit_test_framework REQUIRED)
 
 configure_file(version.h.in version.h)
 
-add_executable(helloworld_cli main.cpp)
-add_library(helloworld lib.cpp)
+add_executable(print_ip_cli main.cpp)
+add_library(print_ip lib.cpp)
 add_executable(test_version test_version.cpp)
 
-set_target_properties(helloworld_cli helloworld test_version PROPERTIES
+set_target_properties(print_ip_cli print_ip test_version PROPERTIES
         CXX_STANDARD 20
         CXX_STANDARD_REQUIRED ON
         )
-target_include_directories(helloworld
+target_include_directories(print_ip
         PRIVATE "${CMAKE_BINARY_DIR}"
         )
 set_target_properties(test_version PROPERTIES
@@ -25,29 +25,29 @@ set_target_properties(test_version PROPERTIES
         INCLUDE_DIRECTORIES ${Boost_INCLUDE_DIR}
         )
 
-target_link_libraries(helloworld_cli PRIVATE
-        helloworld
+target_link_libraries(print_ip_cli PRIVATE
+        print_ip
         )
 target_link_libraries(test_version
         ${Boost_LIBRARIES}
-        helloworld
+        print_ip
         )
 
 if (MSVC)
-    target_compile_options(helloworld_cli PRIVATE
+    target_compile_options(print_ip_cli PRIVATE
             /W4
             )
-    target_compile_options(helloworld PRIVATE
+    target_compile_options(print_ip PRIVATE
             /W4
             )
     target_compile_options(test_version PRIVATE
             /W4
             )
 else ()
-    target_compile_options(helloworld_cli PRIVATE
+    target_compile_options(print_ip_cli PRIVATE
             -Wall -Wextra -pedantic -Werror
             )
-    target_compile_options(helloworld PRIVATE
+    target_compile_options(print_ip PRIVATE
             -Wall -Wextra -pedantic -Werror
             )
     target_compile_options(test_version PRIVATE
@@ -57,7 +57,7 @@ endif()
 
 
 
-install(TARGETS helloworld_cli RUNTIME DESTINATION bin)
+install(TARGETS print_ip_cli RUNTIME DESTINATION bin)
 
 set(CPACK_GENERATOR DEB)
 
